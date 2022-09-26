@@ -1,1 +1,103 @@
 @charset "UTF-8";
+.container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.button{
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.red{
+  background: #fd0f0fd9;
+  color: #fff;
+}
+
+.blue{
+  background: #170ffdd9;
+  color: #fff;
+}
+
+.green{
+  background: #0ffd0fd9;
+  color: #000;
+}
+
+.shadow--red{
+  background: #fd0f0fd9;
+  color: #fff;
+  box-shadow: 0px 10px 4px 0 rgba(63, 5, 5, 0.851);
+}
+
+.shadow--blue{
+  background: #170ffdd9;
+  color: #fff;
+  box-shadow: 0px 10px 4px 0 rgba(5, 13, 63, 0.851);
+}
+
+.shadow--green{
+  background: #0ffd0fd9;
+  color: #000;
+  box-shadow: 0px 10px 4px 0 rgba(5, 63, 5, 0.851);
+}
+
+.active--red{
+  background: #fd0f0fd9;
+  color: #fff;
+  box-shadow: 0px 10px 4px 0 rgba(63, 5, 5, 0.851);
+}
+
+.active--blue{
+  background: #170ffdd9;
+  color: #fff;
+  box-shadow: 0px 10px 4px 0 rgba(5, 13, 63, 0.851);
+}
+
+.active--green{
+  background: #0ffd0fd9;
+  color: #000;
+  box-shadow: 0px 10px 4px 0 rgba(5, 63, 5, 0.851);
+}
+
+.active--red:active, .active--blue:active, .active--green:active{
+  box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.1);
+  transform: translate(0, 10%);
+}
+
+.double--line--button{
+  color: #67c5ff;
+  border: 4px #67c5ff double;
+  transition: 0.5s;
+}
+
+.line--button:hover{
+  background: #fffbef;
+}
+
+.dotted--button{
+  color: #67c5ff;
+  border: 4px #75caff dotted;
+  transition: 0.5s;
+}
+
+.dotted--button:hover{
+  border-style: dashed;
+}
+
+.bold--button{
+  color: #0079a5f8;
+  background: #d0edfff8;
+  border: 4px #67c5ff dashed;
+  transition: 0.5s;
+}
+
+.bold--button:hover{
+  color: #67c5ff;
+  background: #ffffff;
+}
